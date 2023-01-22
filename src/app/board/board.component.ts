@@ -44,9 +44,10 @@ export class BoardComponent {
     this.xIsNext = !this.xIsNext;
     }
 
-    
+
 
   }
 
+  
 
 }
