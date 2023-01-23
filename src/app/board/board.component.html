@@ -1,0 +1,18 @@
+<h1>Current Player: {{ player }}</h1>
+
+<button (click)="newGame()">Start new game!</button>
+<h2 *ngIf="winner">
+  Player {{ winner }} won the game!
+</h2>
+
+<main>
+
+
+ <app-square
+  *ngFor="let value of squares; let i = index"
+
+  ><!--[value] = 'val'  use ngFor to loop through the array of variables here-->
+  (click)="makeMove(i)"
+ </app-square>
+
+</main>

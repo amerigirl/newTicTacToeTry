@@ -12,7 +12,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SquareComponent {
 
-@Input() value?: 'X' | 'O'; /*why did the question mark make it work? The question mark makes it optional*/
 
+  @Input()
+  value: string[] = ["X", "O"] ;
+
+  /*make value an array and use nfor to loop through in the html*/
 
 }
